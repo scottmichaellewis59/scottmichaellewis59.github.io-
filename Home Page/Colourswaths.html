@@ -1,0 +1,307 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+    
+    <!-- BEGIN STYLESHEET/SCRIPT -->
+    <!-- LOAD THREE STYLESHEETS, 1 COMMON, 1 FOR NETSCAPE, 1 FOR IE -->
+    <!--link rel="stylesheet" type="text/css" href="http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_common.css"/>
+    <link rel="stylesheet" type="text/css" href="http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_netscape.css" disabled/>
+    <script language="JavaScript1.2" type="text/javascript">
+        <!--
+        if (document.all) document.createStyleSheet("http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_ie.css");
+        //-->
+        </script>
+    <!-- END STYLESHEET/SCRIPT -->
+    
+    <style>
+        .boldtitle { font-family: "Arial Black", Arial, sans-serif; font-weight: normal; font-size: 24px; }
+        </style>
+    
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+    <!-- the following redirects browsers without support for JavaScript -->
+    <NOSCRIPT>
+        <META HTTP-EQUIV="Refresh" CONTENT="0; URL=nonjsrecruiting.html">
+    </NOSCRIPT>
+    
+    <script language="Javascript">
+        
+        function setCookie(name, value, expire) {
+            document.cookie = name + "=" + escape(value) + ((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
+		}
+        
+        function getCookie(Name) {
+            
+            var search = Name + "="
+            
+            if (document.cookie.length > 0) {
+                
+                // if there are any cookies
+                offset = document.cookie.indexOf(search)
+                if (offset != -1) {
+                    
+                    // if cookie exists
+                    offset += search.length
+                    
+                    // set index of beginning of value
+                    end = document.cookie.indexOf(";", offset)
+                    
+                    // set index of end of cookie value
+                    if (end == -1)
+					end = document.cookie.length
+                    return unescape(document.cookie.substring(offset, end))
+				}
+			}
+		}
+        
+        function register(cookievariablename, value) {
+            var today = new Date();
+            var expires = new Date();
+            expires.setTime(today.getTime() + 1000*60*60*24*365);
+            setCookie(cookievariablename, value, expires);
+        }
+        
+        function getlastused() {
+            
+            var cookielastinc = getCookie('lewisswathsinc');
+            if (cookielastinc != null)
+			lastinc = cookielastinc;
+            else
+			lastinc = 22;
+            document.all['inc'].value=lastinc;
+            
+            var cookielastbg = getCookie('lewisswathsbg');
+            if (cookielastbg != null)
+			lastbg = cookielastbg;
+            else
+			lastbg = "#ffffff";
+            document.bgColor = lastbg;
+            
+            var cookielastredrow1 = getCookie('lewisswathsredrow1');
+            if (cookielastredrow1 != null)
+			lastredrow1 = cookielastredrow1;
+            else
+			lastredrow1 = 22;
+            document.all['redrow1'].value=lastredrow1;
+            
+            var cookielastgreenrow1 = getCookie('lewisswathsgreenrow1');
+            if (cookielastgreenrow1 != null)
+			lastgreenrow1 = cookielastgreenrow1;
+            else
+			lastgreenrow1 = 22;
+            document.all['greenrow1'].value=lastgreenrow1;
+            
+            var cookielastbluerow1 = getCookie('lewisswathsbluerow1');
+            if (cookielastbluerow1 != null)
+			lastbluerow1 = cookielastbluerow1;
+            else
+			lastbluerow1 = 22;
+            document.all['bluerow1'].value=lastbluerow1;
+            
+            var cookielastredrow2 = getCookie('lewisswathsredrow2');
+            if (cookielastredrow2 != null)
+			lastredrow2 = cookielastredrow2;
+            else
+			lastredrow2 = 22;
+            document.all['redrow2'].value=lastredrow2;
+            
+            var cookielastgreenrow2 = getCookie('lewisswathsgreenrow2');
+            if (cookielastgreenrow2 != null)
+			lastgreenrow2 = cookielastgreenrow2;
+            else
+			lastgreenrow2 = 22;
+            document.all['greenrow2'].value=lastgreenrow2;
+            
+            var cookielastbluerow2 = getCookie('lewisswathsbluerow2');
+            if (cookielastbluerow2 != null)
+			lastbluerow2 = cookielastbluerow2;
+            else
+			lastbluerow2 = 22;
+            document.all['bluerow2'].value=lastbluerow2;
+            
+            var cookielastredrow3 = getCookie('lewisswathsredrow3');
+            if (cookielastredrow3 != null)
+			lastredrow3 = cookielastredrow3;
+            else
+			lastredrow3 = 22;
+            document.all['redrow3'].value=lastredrow3;
+            
+            var cookielastgreenrow3 = getCookie('lewisswathsgreenrow3');
+            if (cookielastgreenrow3 != null)
+			lastgreenrow3 = cookielastgreenrow3;
+            else
+			lastgreenrow3 = 22;
+            document.all['greenrow3'].value=lastgreenrow3;
+            
+            var cookielastbluerow3 = getCookie('lewisswathsbluerow3');
+            if (cookielastbluerow3 != null)
+			lastbluerow3 = cookielastbluerow3;
+            else
+			lastbluerow3 = 22;
+            document.all['bluerow3'].value=lastbluerow3;
+            
+            
+		}
+        </script>
+    
+    <script language="JavaScript">
+        //-------------------------------------------------------
+        // Global variables
+        //-------------------------------------------------------
+        
+        
+        //-------------------------------------------------------
+        // Initialization - called when the body finishes loading
+        //-------------------------------------------------------
+        function initialize() {
+            ns = (document.layers)? true:false;
+            ie = (document.all)? true:false;
+            document.all['redrow1'].value=22;
+            document.all['greenrow1'].value=22;
+            document.all['bluerow1'].value=22;
+            document.all['redrow2'].value=99;
+            document.all['greenrow2'].value=44;
+            document.all['bluerow2'].value=11;
+            document.all['redrow3'].value=66;
+            document.all['greenrow3'].value=88;
+            document.all['bluerow3'].value=77;
+            
+            document.all['inc'].value=22;
+            
+            getlastused();
+            
+            t();
+        }
+        
+        
+        function t() {
+            
+            incrementS = document.all['inc'].value;
+            increment = parseInt(incrementS, 10);
+            
+            register('lewisswathsinc',increment);
+            
+            
+            
+            for (j=1; j<4; j++) {
+                
+                curRstr = document.all['redrow'+j].value ;
+                curGstr = document.all['greenrow'+j].value;
+                curBstr = document.all['bluerow'+j].value;
+                curR = parseInt(curRstr, 10);
+                curG = parseInt(curGstr, 10);
+                curB = parseInt(curBstr, 10);
+                
+                register('lewisswathsredrow'+j,curR);
+                register('lewisswathsgreenrow'+j,curG);
+                register('lewisswathsbluerow'+j,curB);
+                
+                for (i=1; i<10; i++) {
+                    curR = curR + increment;
+                    curG = curG + increment;
+                    curB = curB + increment;
+                    curRS = NumToHex (curR);
+                    curGS = NumToHex (curG);
+                    curBS = NumToHex (curB);
+                    
+                    colors = "#" + curRS + curGS + curBS;
+                    
+                    document.all["row" + j + "col" + i].style.background = colors;
+                    
+                    
+                    document.all["row" + j + "col" + i + "div"].innerHTML =
+                    "<DIV onClick=\"document.bgColor=\'"
+                    + colors
+                    + "\'; register(\'lewisswathsbg\',\'"
+                    + colors
+                    + "\'); \">"
+                    + colors
+                    + "<br>"
+                    + curR
+                    + " "
+                    + curG
+                    + " "
+                    + curB
+                    + "</DIV>";
+                }
+            }
+        }
+        
+        
+        
+        function NumToHex(num) {
+            
+            if (num > 255)
+            num = 255;
+            
+            ret = num.toString(16);
+            if (num<16)
+            ret = '0' + ret;
+            
+            return (ret);
+        }
+        
+        </script>
+    
+    
+    <BODY LINK="#0000FF" VLINK="#800080" TEXT="#000000" onLoad="initialize()">
+        <form name='planner'>
+            
+            <h2>Colour Swaths</h2>
+            <p>
+            To generate a colour swath:
+            <ol>
+                <li>Below, for each colour (Red, Green, and Blue), enter numbers for colour intensity (0 to 255 with 0 being no intensity and 255 being maximum intensity)
+                    <li>Enter a number to increment the colour by
+                        <li>Press the refresh button
+            </ol>
+            <p>
+            Your colour values will be saved for next time you visit this page.
+            <p>You can click on the text to change this page's background colour.
+            <br><br><br>
+            <input id='refreshbutton' type='button' value='refresh' onClick="t();">
+                &nbsp;&nbsp;&nbsp;&nbsp;Increment: <input id='inc' type='text' size=3>
+                    <br><br>
+                    <table cols=2 border=2 width='100%'>
+                        
+                        <tr valign='top'>
+                            <td width=50 id='row1controls'>Red:&nbsp;<input id='redrow1' type='number' size=3><br>Green:&nbsp;<input id='greenrow1' type='text' size=3><br>Blue:&nbsp;<input id='bluerow1' type='text' size=3></td>
+                            <td id='row1col1'><div id='row1col1div'></div></td>
+                            <td id='row1col2'><div id='row1col2div'></div></td>
+                            <td id='row1col3'><div id='row1col3div'></div></td>
+                            <td id='row1col4'><div id='row1col4div'></div></td>
+                            <td id='row1col5'><div id='row1col5div'></div></td>
+                            <td id='row1col6'><div id='row1col6div'></div></td>
+                            <td id='row1col7'><div id='row1col7div'></div></td>
+                            <td id='row1col8'><div id='row1col8div'></div></td>
+                            <td id='row1col9'><div id='row1col9div'></div></td>
+                            <tr valign='top'>
+                                <td width=40 id='row2controls'>Red:&nbsp;<input id='redrow2' type='text' size=3><br>Green:&nbsp;<input id='greenrow2' type='text' size=3><br>Blue:&nbsp;<input id='bluerow2' type='text' size=3></td>
+                                <td id='row2col1'><div id='row2col1div'></div></td>
+                                <td id='row2col2'><div id='row2col2div'></td>
+                                <td id='row2col3'><div id='row2col3div'></td>
+                                <td id='row2col4'><div id='row2col4div'></td>
+                                <td id='row2col5'><div id='row2col5div'></td>
+                                <td id='row2col6'><div id='row2col6div'></td>
+                                <td id='row2col7'><div id='row2col7div'></td>
+                                <td id='row2col8'><div id='row2col8div'></td>
+                                <td id='row2col9'><div id='row2col9div'></td>
+                                <tr valign='top'>
+                                    <td width=40 id='row3controls'>Red:&nbsp;<input id='redrow3' type='text' size=3><br>Green:&nbsp;<input id='greenrow3' type='text' size=3><br>Blue:&nbsp;<input id='bluerow3' type='text' size=3></td>
+                                    <td id='row3col1'><div id='row3col1div'></td>
+                                    <td id='row3col2'><div id='row3col2div'></td>
+                                    <td id='row3col3'><div id='row3col3div'></td>
+                                    <td id='row3col4'><div id='row3col4div'></td>
+                                    <td id='row3col5'><div id='row3col5div'></td>
+                                    <td id='row3col6'><div id='row3col6div'></td>
+                                    <td id='row3col7'><div id='row3col7div'></td>
+                                    <td id='row3col8'><div id='row3col8div'></td>
+                                    <td id='row3col9'><div id='row3col9div'></td>
+                    </table>
+                    
+        </form>
+    </BODY>
+    
+</html>
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->

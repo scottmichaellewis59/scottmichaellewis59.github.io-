@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            
+            <SCRIPT LANGUAGE=javascript>
+                <!--
+                
+            function OpenInNewTab(url )
+            {
+                var win=window.open(url, '_blank');
+                win.focus();
+            }
+
+            
+            function HandleSubmit()
+            {
+                // when user types in textbox and presses enter, this function is called
+                var strParameter = document.form1.URL.value;
+                OpenInNewTab("http://delicious.com/scottmlewis/search/" + strParameter);
+
+                // top.location = window.location.pathname + '?' + strParameter;
+                // next lines causes form not to reload (like pressing F5)
+               //return false;
+               }
+    
+               //-->
+               </SCRIPT>
+            </head>
+    
+    <body bgcolor=#FFFFEE>
+
+        <FORM id=form1 name=form1 onSubmit="return HandleSubmit()" autocomplete="on">
+            Search bookmarks:
+            <input SIZE=20 type="text" name="URL">
+
+            <INPUT TYPE="button" NAME="RefreshButton" VALUE="Search" onClick="HandleSubmit()">
+        </FORM> 
+
+
+        
+    </body>
+</html>

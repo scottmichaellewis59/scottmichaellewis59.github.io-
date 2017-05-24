@@ -1,0 +1,211 @@
+
+
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+    
+    <!-- BEGIN STYLESHEET/SCRIPT 
+    <!-- LOAD THREE STYLESHEETS, 1 COMMON, 1 FOR NETSCAPE, 1 FOR IE 
+    <link rel="stylesheet" type="text/css" href="http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_common.css"/>
+    <link rel="stylesheet" type="text/css" href="http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_netscape.css" disabled/>
+    <script language="JavaScript1.2" type="text/javascript">
+        <!--
+        if (document.all) document.createStyleSheet("http://ucdwasp1.torolab.ibm.com/ucd/workbench/html/css/w3_ie.css");
+        //
+        </script>
+    <!-- END STYLESHEET/SCRIPT -->
+    
+    <style>
+        .boldtitle { font-family: "Arial Black", Arial, sans-serif; font-weight: normal; font-size: 24px; }
+        </style>
+    
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+    <!-- the following redirects browsers without support for JavaScript -->
+    <NOSCRIPT>
+        <META HTTP-EQUIV="Refresh" CONTENT="0; URL=nonjsrecruiting.html">
+            </NOSCRIPT>
+    
+    <script language="Javascript">
+        
+        function setCookie(name, value, expire) {
+            document.cookie = name + "=" + escape(value) + ((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
+		}
+        
+        function getCookie(Name) {
+            
+            var search = Name + "="
+            
+            if (document.cookie.length > 0) {
+                
+                // if there are any cookies
+                offset = document.cookie.indexOf(search)
+                if (offset != -1) {
+                    
+                    // if cookie exists
+                    offset += search.length
+                    
+                    // set index of beginning of value
+                    end = document.cookie.indexOf(";", offset)
+                    
+                    // set index of end of cookie value
+                    if (end == -1)
+					end = document.cookie.length
+                    return unescape(document.cookie.substring(offset, end))
+				}
+			}
+		}
+        
+        function register(cookievariablename, value) {
+            var today = new Date();
+            var expires = new Date();
+            expires.setTime(today.getTime() + 1000*60*60*24*365);
+            setCookie(cookievariablename, value, expires);
+        }
+        
+        function getlastused() {
+            
+            var cookielastinc = getCookie('workhomechoice');
+            
+            if (cookielastinc != null)
+			homeShown = cookielastinc;
+            else
+			homeShown = 1;
+            
+		}
+    
+        function OpenInNewTab(url )
+        {
+            var win=window.open(url, '_blank');
+            win.focus();
+        }
+        
+        
+        function HandleSubmit()
+        {
+            // when user types in textbox and presses enter, this function is called
+            var strParameter = document.form1.URL.value;
+            OpenInNewTab("http://delicious.com/catlynne/search/" + strParameter);
+            
+            // top.location = window.location.pathname + '?' + strParameter;
+            // next lines causes form not to reload (like pressing F5)
+            //return false;
+        }
+    
+        </script>
+    
+    <script language="JavaScript">
+        //-------------------------------------------------------
+        // Global variables
+        //-------------------------------------------------------
+        
+        
+        //-------------------------------------------------------
+        // Initialization - called when the body finishes loading
+        //-------------------------------------------------------
+        function initialize() {
+            ns = (document.layers)? true:false;
+            ie = (document.all)? true:false;
+            
+            getlastused();
+            
+            if (homeShown == 1)
+            showHome ();
+            else
+            showWork ();
+        }
+        
+        
+        
+        function showWork() {
+            document.getElementById("work").style.display='block';
+            document.getElementById("home").style.display='none';
+            homeShown = 0 ;
+            register('workhomechoice',homeShown);
+        }
+        
+        function showHome() {
+            document.getElementById("work").style.display='none';
+            document.getElementById("home").style.display='block';
+            homeShown = 1 ;
+            register('workhomechoice',homeShown);
+        }
+        
+        
+        </script>
+    
+    
+    <BODY onLoad="initialize()">
+
+    </BODY>
+    
+</html>
+<!-- Hosting24 Analytics Code -->
+<!--script type="text/javascript" src="http://stats.hosting24.com/count.php"></script-->
+<!-- End Of Analytics Code -->
+
+
+<center><p><p><p><p><p><p>
+    <div id="home" style="display:none">
+        
+        <a href="http://www.merriam-webster.com/"><img src="Merriam-Webster.jpg" height="35" title="Merrium Webster"></a>
+        <a href="https://ring.com/account/activity"><img src="ring.png" height="60" title="Ring Cameras"></a>
+        <a href="https://my.ooma.com"><img src="ooma-squarelogo.png" height="60" title="Ooma"></a>
+        <a href="https://www.ourgroceries.com/your-lists/"><img src="our_groceries.png" height="60"></img></a>
+        <a href="https://www.google.com/maps/@43.6984807,-79.2545238,15691m/data=!3m1!1e3"><img src="big-map-pin.png" height="60" title="maps"></a>
+        <a href="http://scottmichaellewis.atspace.cc/weather.html"><img src="00.gif" height="60" title="weather forecast"></a>
+        <a href="http://my.ultimate-guitar.com/main.php?mode=favorites"><img src="music.jpg" height="60" title="music chords"></a>
+        <a href="https://www.facebook.com/"><img src="facebook_logo2.png" height="60" title="facebook"></a>   
+        <a href="https://apps.facebook.com/upwordsapp/"><img src="UpwordsIcon.png" height="60" title="upwords"></a>
+        <a href="https://drive.google.com/?tab=co#recent"><img src="google-plus.png" height="60" title="google docs"></a>
+        <a href="https://easyweb.td.com"><img src="td_logo.png" height="60" title="Canada Trust"></a>
+        <a href="https://secure.tangerine.ca/web/InitialTangerine.html?command=displayLogin&device=web&locale=en_CA"><img src="tangerine.png" height="60" title="Tangerine Bank"></a>
+            
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        <a href="https://www.youtube.com/feed/subscriptions"><img src="youtube-icon.png" height="60" title="Youtube"></a>    
+        <a href="http://www.cbc.ca/player/"><img src="CBC.png" height="60" title="CBC"></a>
+        <a href="http://www.cbc.ca/listen/live/radio1/toronto"><img src="CBC_Radio_Logo.svg.png" height="60" title="CBC Radio"></a>
+    
+        <a href="http://movies.netflix.com/WiHome"><img src="Netflix-App-Logo.jpg" height="60" title="NetFlix"></a>
+
+        <p></p>
+        <hr width="40%" noshade>
+        
+
+
+        <a href="http://goo.gl/maps/zS9b9"><img src="big-map-pin.png" height="35" title="maps"></a>    
+   
+        <a href="http://www.rottentomatoes.com/"><img src="rotten.png" height="60" title="Rotten Tomatoes"></a>
+        <a href="https://www.torontopubliclibrary.ca/youraccount"><img src="Sidebar-Library-icon.png" height="35" title="Toronto Library"></a>
+                
+    </div>
+    
+    <div id="work" style="display:none">
+        
+
+        
+        
+        
+    </div>
+
+    <p><p><p>
+    <hr width="40%" noshade>
+    <p><p><p>
+    
+    <div id="container" style="width:700px verticalAlign:middle" >
+        <FORM id=form1 name=form1 onSubmit="return HandleSubmit()" autocomplete="on">
+            <input SIZE=20 type="text" name="URL"><INPUT TYPE="button" NAME="RefreshButton" VALUE="Search tags" onClick="HandleSubmit()">
+                </FORM>
+
+
+    <div id="container" style="width:700px">
+    
+    <!-- OLD API  script type="text/javascript" src="http://del.icio.us/feeds/js/tags/scottmlewis?icon;count=150;size=13-30;color=31B596-0A6494;title="></script-->
+    <script type="text/javascript" src="http://feeds.delicious.com/v2.1/js/tags/catlynne?icon;count=150;size=13-30;color=31B596-0A6494;title="></script>
+        
+        </div>
+    
+</center>
+        
+        
+   
